@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { AlunoPage } from '../aluno/aluno';
+
 
 @Component({
   selector: 'page-home',
@@ -13,9 +15,10 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-  login() {
-    // this.navCtrl.push(LoginPage);
-    console.log("========== login ===========");
+  logar() {
+    if(this.usuario.toUpperCase() == 'CNO' && this.senha.toUpperCase() == 'CNO'){
+      this.navCtrl.push(AlunoPage);
+    }
   }
 
   signup() {

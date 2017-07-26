@@ -26,12 +26,16 @@ page-home {
     background-size: 100%;
     width: 128px;
     height: 128px;
+    border-radius: 15%;
   }
   .splash-intro {
     font-size: 18px;
     font-weight: bold;
     max-width: 80%;
     margin: auto;
+    font-size: 3rem;
+    color: #00008B;
+    margin-top: 15px;
   }
   button.login {
     margin-top: 25px;

@@ -17,18 +17,20 @@
   <div class="splash-info">
     <div class="splash-logo"></div>
     <div class="splash-intro">
-      WELCOME_INTRO
+      Colegio Nova Olinda
     </div>
   </div>
   <div padding>
     <ion-item>
+      <ion-label color="primary" fixed>Login:</ion-label>
       <ion-input type="text" placeholder="Digite o Usuário" name="usuario" [(ngModel)]="usuario"></ion-input>
     </ion-item>
     <ion-item>
+      <ion-label color="primary" fixed>Senha:</ion-label>
       <ion-input type="password" placeholder="Digite a Senha" name="senha" [(ngModel)]="senha"></ion-input>
     </ion-item>
-    <button ion-button block (click)="signup()" class="signup">SIGNUP</button>
 
-    <button ion-button block (click)="login()" class="login">LOGIN</button>
+    <button ion-button block (click)="logar()" class="signup">ENTRAR</button>
+
   </div>
 </ion-content>
