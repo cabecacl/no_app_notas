@@ -6,11 +6,20 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <button ion-item menu-close *ngFor="let p of pages"  (click)="openPage(p)">
+      <button ion-item menuClose (click)="openPage(alunoPage)">
+        Aluno
+      </button>
+      <button ion-item menuClose (click)="openPage(notasPage)">
         Notas
       </button>
     </ion-list>
+    
+    <!-- <ion-list>
+      <button ion-item menu-close *ngFor="let p of pages"  (click)="openPage(p)">
+        Notas
+      </button>
+    </ion-list> -->
   </ion-content>
 </ion-menu>
 
-<ion-nav [root]="rootPage" #menu swipeBackEnabled="false"></ion-nav>
+<ion-nav [root]="rootPage" #menu></ion-nav>
