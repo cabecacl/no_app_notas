@@ -5,9 +5,14 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-buttons start> 
+      <button ion-button icon-only menu-toggle> 
+        <ion-icon name= "menu"> </ion-icon> 
+      </button>
+    </ion-buttons>
+  <ion-toolbar color="primary">
     <ion-title>Aluno</ion-title>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
@@ -24,9 +29,41 @@
     </ion-label>
   </ion-item>
   <ion-item padding>
+    <ion-label>Nº Matricula:</ion-label>
+    <ion-label>
+      {{aluno.numeroMatricula}}
+    </ion-label>
+  </ion-item> 
+  <ion-item padding>
     <ion-label>Turma:</ion-label>
     <ion-label>
       {{aluno.turma.nome}}
+    </ion-label> 
+    </ion-item>
+    <ion-item padding>
+    <ion-label>Turno:</ion-label>
+    <ion-label>
+      {{aluno.turno}}
+    </ion-label>
+  </ion-item> 
+  <ion-item padding>
+    <ion-label>Data de Nasci.:</ion-label>
+    <ion-label>
+      {{aluno.diaNascimento}}
+    </ion-label>
+  </ion-item> 
+  <ion-item padding>
+    <ion-label>Nº Residencial:</ion-label>
+    <ion-label>
+      {{aluno.numResidencial}}
+    </ion-label>
+  </ion-item> 
+  <ion-item padding>
+    <ion-label>Nº Celular:</ion-label>
+    <ion-label>
+      {{aluno.numCelular}}
     </ion-label>
   </ion-item>
+  
+  
 </ion-content>
