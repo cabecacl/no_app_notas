@@ -1,4 +1,5 @@
 import { Turma } from './Turma';
+import { Nota } from './Nota';
 
 export class Aluno{
     nome: string;
@@ -9,4 +10,6 @@ export class Aluno{
     diaNascimento: string; 
     numCelular: string; 
     numResidencial: string;
+
+    notas: Nota[] = new Array<Nota>();
 }
