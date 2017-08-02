@@ -20,18 +20,18 @@ export class AlunoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   
-    let aluno = new Aluno;
-    aluno.nome = "Luciano Andrade da Silva";
-    aluno.dataNascimento = 15;
-    aluno.turma = new Turma();
-    aluno.turma.nome = "9º Ano"; 
-    aluno.numeroMatricula = 44555; 
-    aluno.turno = "Manhã";
-    aluno.diaNascimento = "28/09/2002"; 
-    aluno.numResidencial = "1111-4444"; 
-    aluno.numCelular = "(81)92222-5555"; 
+    // let aluno = new Aluno;
+    // aluno.nome = "Luciano Andrade da Silva";
+    // aluno.dataNascimento = 15;
+    // aluno.turma = new Turma();
+    // aluno.turma.nome = "9º Ano"; 
+    // aluno.numeroMatricula = 44555; 
+    // aluno.turno = "Manhã";
+    // aluno.diaNascimento = "28/09/2002"; 
+    // aluno.numResidencial = "1111-4444"; 
+    // aluno.numCelular = "(81)92222-5555"; 
 
-    this.aluno = aluno;
+    this.aluno = navParams.get('aluno');
   }
 
   ionViewDidLoad() {

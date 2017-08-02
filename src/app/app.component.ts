@@ -23,10 +23,16 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });   
+
+    
   }
 
   openPage(page){ 
     this.rootPage = page;
+  }
+
+  sair(){
+    
   }
 
 }
