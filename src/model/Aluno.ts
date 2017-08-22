@@ -3,10 +3,11 @@ import { Nota } from './Nota';
 
 export class Aluno{
     nome: string;
-    dataNascimento: Date;
+    dataNascimento: string;
     numeroMatricula: string; 
     turno: string;
     numCelular: string; 
+    foto: string;
 
     turma: Turma = new Turma();
 

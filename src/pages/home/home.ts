@@ -50,16 +50,18 @@ export class HomePage {
     let aluno2 = new Aluno();
 
     aluno1.nome = "Luciano Andrade dos Santos";
-    aluno1.dataNascimento = new Date();
+    aluno1.dataNascimento = "17 anos";
     aluno1.numeroMatricula = "MT12345";
     aluno1.turno = "Manhã";
     aluno1.numCelular = "81 98888 9999";
+    aluno1.foto = "../../../assets/img/luciano.jpg";
 
-    aluno2.nome = "Thiago Hercules de Aguiar";
-    aluno2.dataNascimento = new Date();
+    aluno2.nome = "Cleiton de Aguiar";
+    aluno2.dataNascimento = "16 anos";
     aluno2.numeroMatricula = "MA54321";
     aluno2.turno = "Tarde";
     aluno2.numeroMatricula = "81 99999 7777";
+    aluno2.foto = "../../../assets/img/cleiton.jpg";
 
     let turma1 = new Turma();
     let turma2 = new Turma();
@@ -100,7 +102,7 @@ export class HomePage {
     
     nota1.materia = materia1;
     nota1.semestre = semestre1;
-    nota1.valorNota = 10;
+    nota1.valorNota = 10.0;
     
     nota2.materia = materia2;
     nota2.semestre = semestre1;
@@ -112,7 +114,7 @@ export class HomePage {
 
     nota4.materia = materia4;
     nota4.semestre = semestre1;
-    nota4.valorNota = 6;
+    nota4.valorNota = 6.0;
 
     nota5.materia = materia1;
     nota5.semestre = semestre1;
@@ -124,7 +126,7 @@ export class HomePage {
 
     nota7.materia = materia3;
     nota7.semestre = semestre1;
-    nota7.valorNota = 9;
+    nota7.valorNota = 9.0;
 
     nota8.materia = materia4;
     nota8.semestre = semestre1;

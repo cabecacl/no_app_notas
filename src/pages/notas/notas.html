@@ -20,19 +20,25 @@
 
 <ion-content padding>
 
-  
-<ion-card>
+  <ion-list>
+    <ion-card *ngFor="let nota of aluno.notas">
 
-  <ion-card-header>
-    Notas 
-    {{aluno.nome}}
-    {{aluno.numResidencial}}
-  </ion-card-header>
+      <ion-card-header>
+        <ion-label> <font style="font-weight: bold" >{{nota.materia.nome}} </font> - {{nota.materia.nomeProfessor}}</ion-label>
+        <!-- <ion-label style="font-weight: bold">{{nota.materia.nomeProfessor}}</ion-label> -->
+      </ion-card-header>
 
-  <ion-card-content>
-    Teste
-  </ion-card-content>
+      <ion-card-content>
+        <ion-label>
+          <font style="font-weight: bold"> N1: </font> {{nota.valorNota}} -
+          <font style="font-weight: bold"> N2: </font> 6.0 - 
+          <font style="font-weight: bold"> N3: </font> 7.0 - 
+          <font style="font-weight: bold"> N4: </font> 10.0 </ion-label>
+      </ion-card-content>
 
-</ion-card>
+    </ion-card>
+
+  </ion-list>
+
 
 </ion-content>
